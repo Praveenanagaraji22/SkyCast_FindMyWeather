@@ -153,6 +153,27 @@ function Home() {
 export default Home;
 
 ```
+App.js
+```
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Weather from './Weather';
+
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/weather" element={<Weather />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+```
 
 ## Output:
 <img width="1918" height="721" alt="image" src="https://github.com/user-attachments/assets/ebd8c088-6c14-4d4a-8ec1-5f57fade917c" />
